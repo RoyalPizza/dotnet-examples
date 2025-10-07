@@ -1,0 +1,47 @@
+﻿<Window x:Class="MEC.Views.LogsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MEC.Views"
+        xmlns:views="clr-namespace:MEC.Views"
+        mc:Ignorable="d"
+        Title="Logs" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Window.DataContext>
+        <views:LogsViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <ComboBox Grid.Row="0" ItemsSource="{Binding Filenames}" SelectedItem="{Binding SelectedFilename}" FontSize="24" Height="50" Margin="10"/>
+        
+        <!-- TOOD: Fight with WPF to figure out why designer shows logs with no spacing but runtime does -->
+        <ListBox Grid.Row="1" ItemsSource="{Binding Logs}" Margin="10" FontSize="16">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FriendlyTimestamp}" Width="100"/>
+                        <TextBlock Text="{Binding Level}" Width="50" />
+                        <TextBlock Text="{Binding Message}" Width="Auto" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <!-- TODO: Decide if I prefer textbox or listbox. Listbox formats the date. Textbox doesnt. -->
+        <TextBox Grid.Row="1" Text="{Binding FileData}" Margin="10" FontSize="16" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" 
+                 Visibility="Collapsed"/>
+    </Grid>
+</Window>

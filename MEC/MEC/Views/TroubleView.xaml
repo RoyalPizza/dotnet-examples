@@ -1,0 +1,27 @@
+﻿<Window x:Class="MEC.Views.TroubleView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MEC.Views"
+        xmlns:views="clr-namespace:MEC.Views"
+        mc:Ignorable="d"
+        Title="Trouble Bag" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Window.DataContext>
+        <views:TroubleViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="{Binding Description}" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Cancel" MinHeight="50" MinWidth="100" Command="{Binding CancelPressedCommand}" Margin="5"/>
+            <Button Content="Confirm" MinHeight="50" MinWidth="100" Command="{Binding ConfirmPressedCommand}" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

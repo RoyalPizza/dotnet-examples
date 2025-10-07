@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="MEC.Views.NumberpadView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MEC"
+             xmlns:views="clr-namespace:MEC.Views"
+             mc:Ignorable="d"
+             Unloaded="UserControl_Unloaded"
+             d:DesignHeight="450" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <views:NumberpadViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="100" Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Text="{Binding Display, Mode=OneWay}" FontSize="48" IsReadOnly="True" Margin="0,0,0,10" VerticalAlignment="Center" />
+
+        <UniformGrid Grid.Row="1" Rows="4" Columns="3">
+            <Button Content="1" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="1" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="2" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="2" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="3" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="3" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+
+            <Button Content="4" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="4" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="5" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="5" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="6" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="6" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+
+            <Button Content="7" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="7" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="8" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="8" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="9" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="9" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+
+            <Button Content="Del" Command="{Binding DeletePressedCommand}" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+            <Button Content="0" Command="{Binding NumberPressedCommand}" IsEnabled="{Binding EditEnabled}" CommandParameter="0" FontSize="48" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"/>
+
+        </UniformGrid>
+
+    </Grid>
+</UserControl>
