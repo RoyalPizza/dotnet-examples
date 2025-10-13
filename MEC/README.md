@@ -1,5 +1,6 @@
 ﻿# MEC
 TODO
+![Alt text](/Images/App.png)
 
 # TASKS
 ## v1
