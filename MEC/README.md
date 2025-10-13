@@ -3,8 +3,9 @@ The Manual Encoding Console (MEC) is a standalone industrial automation applicat
 
 This project is a mock MEC designed around its core principles.
 - Running in isolation without internet access, nonstop for years.
-- Large bulky UI for low resolution and "not" very touch sensitive screens.
+- Large, bulky UI for low-resolution, less touch-sensitive screens.
 - Able to run with communication external servers and independently.
+- Kiosk style app design.
 
 <img width="512" height="384" alt="App" src="https://github.com/user-attachments/assets/5a0a3f5b-407a-4567-b37d-b3c10fd04379" />
 
