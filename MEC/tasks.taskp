@@ -31,7 +31,6 @@
 
 [ISSUES]
 - // TODO: Maybe use a different name. ASP uses this name. Perhaps "MECSettings" or just "Settings". [MEC/MEC/Settings/AppSettings.cs::2]
-- // TODO: For v1, this assumes we are only ever typing IATA Consider more support in v2. [MEC/MEC/Views/NumberpadViewModel.cs::94]
 - // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::140]
 - // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::146]
 - // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::152]
@@ -41,6 +40,7 @@
 - // TODO: See comment in LoadOrCreate [MEC/MEC/Settings/SettingsLoader.cs::41]
 - // TODO: This varies greatly based on comms protocol and library. This is not a good solution. [MEC/MEC/Settings/ProviderSettings.cs::9]
 - // TODO: inform app about this [MEC/MEC/Provider/SimulatorProvider.cs::172]
+- // TODO: For v1, this assumes we are only ever typing IATA Consider more support in v2. [MEC/MEC/Views/NumberpadViewModel.cs::94]
 - // TODO: Unloaded basically never fires. Use closing instead or something [MEC/MEC/MainView.xaml.cs::27]
 - // TODO: simplify this garbage [MEC/MEC/Core/LogParser.cs::29]
 
