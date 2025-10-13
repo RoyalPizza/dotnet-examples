@@ -1,6 +1,6 @@
 ﻿# MEC
 TODO
-![Alt text](/Images/App.png)
+<img width="512" height="384" alt="App" src="https://github.com/user-attachments/assets/5a0a3f5b-407a-4567-b37d-b3c10fd04379" />
 
 # TASKS
 ## v1
@@ -83,4 +83,5 @@ MEC.Dispatch (W)
 	- PLC should can clear this value after dispatch is recieved, if desired
 - Disapatch (W)
 	- App sets this value on dispatch.
+
 	- PLC must set low after bag has completed the dispatch process.
