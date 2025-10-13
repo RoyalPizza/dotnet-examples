@@ -1,39 +1,6 @@
 ﻿# MEC
-TODO
+
 <img width="512" height="384" alt="App" src="https://github.com/user-attachments/assets/5a0a3f5b-407a-4567-b37d-b3c10fd04379" />
-
-# TASKS
-## v1
-- update readme
-
-## v2
-These items are descoped from v1 to save time.
-- implement CanDispatch system
-- fix issue where PLC enable/disable can get out of sync
-- add a sorter interface layer
-- quick dispatch system to use numberpad to dispatch non iata
-- user login system
-- comm failure lockout & comm failure testing
-- error popup window (instead of windows message box)
-- filter support on popup for flights and such
-- make UI scroll bars nice and fat insated of relying on gestures
-- logger spammer prevention (dont log comms errors every attempt, limit to 3)
-- handle scenario where PLC pseudo can change unnexpectedly (inform user to restart basically)
-- more logging (logging logging logging!)
-- dispatch animation to draw users eyes to button when ready to press
-- update history messages to have a better format
-	- better spacing
-	- specify pseudo vs iata
-- color coded logs (something simple to make errors popup out)
-
-## v3
-These tasks are to make the app feel more part of a larger software suite
-- create mocked flight schedule
-- move configurable objects to shared library
-- provide external syncer support (configuring the app remotley)
-- real sorter logic
-- libplctag provider
-- add "place bag on belt" delays and logic
 
 # Architecture
 - Application is designed to run standalone with out interaction of an external system. (ex. plc configuration coming from a shared )
