@@ -1,0 +1,59 @@
+[TASKS]
+-- V1 (mvp)
+- update readme [#7D848]
+
+-- V2 (tasks descoped from v1)
+- implement CanDispatch system [#D6B06]
+- fix issue where PLC enable/disable can get out of sync [#0859F]
+- add a sorter interface layer [#8B7B3]
+- quick dispatch system to use numberpad to dispatch non iata [#CB067]
+- user login system [#76E95]
+- comm failure lockout & comm failure testing [#B61AD]
+- error popup window (instead of windows message box) [#CD792]
+- filter support on popup for flights and such [#2F0C2]
+- make UI scroll bars nice and fat insated of relying on gestures [#F64EF]
+- logger spammer prevention (dont log comms errors every attempt, limit to 3) [#7F158]
+- handle scenario where PLC pseudo can change unnexpectedly (inform user to restart basically) [#BB0A0]
+- more logging (logging logging logging!) [#F0DF6]
+- dispatch animation to draw users eyes to button when ready to press [#5F106]
+- update history messages to have a better format [#30551]
+	- better spacing [#1F9FE]
+	- specify pseudo vs iata [#B6E93]
+- color coded logs (something simple to make errors popup out) [#3221C]
+
+-- V3 (add integration of external interfaces for sorter and such)
+- create mocked flight schedule [#D8294]
+- move configurable objects to shared library [#CF59C]
+- provide external syncer support (configuring the app remotley) [#C029E]
+- real sorter logic [#B23E5]
+- libplctag provider [#D00CA]
+- add "place bag on belt" delays and logic [#F6358]
+
+[ISSUES]
+- // TODO: Maybe use a different name. ASP uses this name. Perhaps "MECSettings" or just "Settings". [MEC/MEC/Settings/AppSettings.cs::2]
+- // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::140]
+- // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::146]
+- // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::152]
+- // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::158]
+- // TODO: Implementing this requires a flight schedule. [MEC/MEC/Sorters/SorterService.cs::164]
+- // TODO: WPF will call the app host constructor at design time. [MEC/MEC/Settings/SettingsLoader.cs::16]
+- // TODO: See comment in LoadOrCreate [MEC/MEC/Settings/SettingsLoader.cs::41]
+- // TODO: This varies greatly based on comms protocol and library. This is not a good solution. [MEC/MEC/Settings/ProviderSettings.cs::9]
+- // TODO: inform app about this [MEC/MEC/Provider/SimulatorProvider.cs::172]
+- // TODO: For v1, this assumes we are only ever typing IATA Consider more support in v2. [MEC/MEC/Views/NumberpadViewModel.cs::94]
+- // TODO: Unloaded basically never fires. Use closing instead or something [MEC/MEC/MainView.xaml.cs::27]
+- // TODO: simplify this garbage [MEC/MEC/Core/LogParser.cs::29]
+
+[USERS]
+- royalpizza
+
+[SETTINGS]
+Scanner.Keyword: TODO
+Scanner.Keyword: FIXME
+Scanner.Keyword: BUG
+Scanner.Exclude: *.md
+Scanner.Exclude: *.taskp
+Scanner.Exclude: .git
+Scanner.Exclude: .vs
+Scanner.Exclude: bin
+Scanner.Exclude: obj
