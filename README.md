@@ -1,7 +1,38 @@
 # dotnet-examples
 A repository of example dotnet applications. Meant as a portfolio piece.
+The goal is to have one project per tech stack.
 
-## MEC
-Baggage Handling System (BHS)
-Manual Encoding Console (MEC)
-A WPF application built to be a mock BHS-MEC station. Allows operators to manually process bags that could not be automatically processed. Designed to be low resolution, bulky UI deisgn; to mimick real world requirements.
+## Tech Stacks
+### Core
+- [x] WPF
+- [ ] WinForms
+- [x] Service
+- [ ] Console
+- [ ] WinUI 3
+
+### Web & Networking
+- [x] ASP.NET MVC
+- [x] ASP.NET WEB API
+- [ ] ASP.NET BLAZOR (WASM)
+- [ ] TCP (Console TCP Server/Client)
+
+### Database & ORM
+- [x] Sqlite
+- [ ] SQL Server
+- [x] Entity Framework
+
+### Mobile
+- [ ] MAUI
+
+### Testing & Deployment
+- [ ] xUnit (UNIT TEST)
+- [ ] MSTest (UNIT TEST)
+- [ ] GitHub Actions (CI/CD)
+
+## Architecture / Patterns / MISC
+- [ ] Auth
+- [ ] Microservice
+- [ ] Localization
+- [x] Logging
+- [x] MVVM
+- [x] OOP
