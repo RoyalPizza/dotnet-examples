@@ -1,0 +1,33 @@
+[TASKS]
+-- v2
+- make a worker that uses a self managed Thread [#CECD2]
+    -- just to provide as an example over the new worker system
+    -- have it listen to the worker and response when its not busy
+    -- to show syncing between two threads without UI
+- present data being polled in some fashion. Other than just saying it was logged.
+
+-- v3
+- update the client to be a better client of the api [#BAAD5]
+    - paramter object instead of hardcoded strings [#EB298]
+    - full result objects [#0A7AF]
+
+
+[ISSUES]
+- // TODO: implement user for this app, and ensure it only has access to the data path [WFS/Program.cs::15]
+- // TODO: ensure data path exists [WFS/Program.cs::16]
+- // TODO: Dont do this. Just doing it for now to easily move forward. [WFS/ForcastWorker.cs::23]
+- // TODO: replace with type [WFS/GFSResult.cs::71]
+- // TODO: replace with type [WFS/GFSResult.cs::75]
+- // TODO: complete this class structure [WFS/GFSResult.cs::80]
+- // TODO: complete this class structure [WFS/GFSResult.cs::91]
+- // TODO: This class is very brute force. Works for my purpose, but is a bad look. [WFS/GFSConfig.cs::4]
+
+[USERS]
+- royalpizza
+
+[SETTINGS]
+Scanner.Keyword: TODO
+Scanner.Keyword: FIXME
+Scanner.Keyword: BUG
+Scanner.Exclude: *.md
+Scanner.Exclude: *.taskp
