@@ -1,0 +1,29 @@
+﻿@model FMS.Models.PierViewModel
+
+@{
+    ViewData["Title"] = "Pier";
+}
+<h1>@ViewData["Title"]</h1>
+<p><a asp-action="Create" class="btn btn-primary">Create New Pier</a></p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pier in Model.Piers)
+        {
+            <tr>
+                <td>@pier.Name</td>
+                <td>@pier.Code</td>
+                <td>
+                    <a class="btn btn-link disabled">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@pier.Id" class="btn btn-link">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

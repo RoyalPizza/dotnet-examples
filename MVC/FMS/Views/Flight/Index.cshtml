@@ -1,0 +1,30 @@
+﻿@model FMS.Models.FlightViewModel
+
+@{
+    ViewData["Title"] = "Flight";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Airline</th>
+            <th>Flight Number</th>
+            <th>Airport Code</th>
+            <th>Depart Time</th>
+            <th>Sort Destination</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var flight in Model.Flights)
+        {
+            <tr>
+                <td>@flight.CarrierKey</td> @* TODO: this should be a view object with the carrier name *@
+                <td>@flight.FlightNumber</td>
+                <td>@flight.AirportCode</td>
+                <td>@flight.DepartTime</td>
+                <td>@flight.PierKey</td> @* TODO: this should be a view object with the pier name *@
+            </tr>
+        }
+    </tbody>
+</table>
