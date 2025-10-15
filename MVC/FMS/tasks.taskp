@@ -1,0 +1,39 @@
+[TASKS]
+ 
+-- v1 (mvp)
+- carrier creation should check unique & valid name and code [#A8B61]
+    -- code needs to be minimum 2 chars, max 4
+- pier creation should check unique name and code [#650CC]
+    -- code needs to be > 0
+
+-- v2 (full table features and flight crud)
+- add support for paginated, sortable, and filterable tables [#37BD6]
+- add edit support for carrier and flight [#3B0F1]
+- add CRUD operaitons for flight page [#BC93D]
+
+-- v3 (auth)
+- add login & register system [#914AF]
+
+-- v4 (installer)
+- ensure logs and databse to program data [#8566D]
+- create installer [#6DACC]
+    -- ensure the app is run using an app user
+
+[ISSUES]
+- // TODO: implement user for this app, and ensure it only has access to the data path [Program.cs::20]
+- // TODO: ensure data path exists [Program.cs::21]
+
+[USERS]
+- royalpizza
+
+[SETTINGS]
+Scanner.Keyword: TODO
+Scanner.Keyword: FIXME
+Scanner.Keyword: BUG
+Scanner.Exclude: *.md
+Scanner.Exclude: *.taskp
+Scanner.Exclude: .git
+Scanner.Exclude: .vs
+Scanner.Exclude: bin
+Scanner.Exclude: obj
+Scanner.Exclude: wwwroot

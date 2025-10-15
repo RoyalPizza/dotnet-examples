@@ -1,0 +1,29 @@
+﻿@model FMS.Models.CarrierViewModel
+
+@{
+    ViewData["Title"] = "Carrier";
+}
+<h1>@ViewData["Title"]</h1>
+<p><a asp-action="Create" class="btn btn-primary">Create New Carrier</a></p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var carrier in Model.Carriers)
+        {
+            <tr>
+                <td>@carrier.Name</td>
+                <td>@carrier.Code</td>
+                <td>
+                    <a class="btn btn-link disabled">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@carrier.Id" class="btn btn-link">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
