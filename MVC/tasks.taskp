@@ -1,12 +1,9 @@
 [TASKS]
- 
--- v1 (mvp)
+-- v2 (full table features and flight crud)
 - carrier creation should check unique & valid name and code [#A8B61]
     -- code needs to be minimum 2 chars, max 4
 - pier creation should check unique name and code [#650CC]
     -- code needs to be > 0
-
--- v2 (full table features and flight crud)
 - add support for paginated, sortable, and filterable tables [#37BD6]
 - add edit support for carrier and flight [#3B0F1]
 - add CRUD operaitons for flight page [#BC93D]
@@ -20,8 +17,8 @@
     -- ensure the app is run using an app user
 
 [ISSUES]
-- // TODO: implement user for this app, and ensure it only has access to the data path [Program.cs::20]
-- // TODO: ensure data path exists [Program.cs::21]
+- // TODO: implement user for this app, and ensure it only has access to the data path [FMS/Program.cs::20]
+- // TODO: ensure data path exists [FMS/Program.cs::21]
 
 [USERS]
 - royalpizza
