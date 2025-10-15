@@ -1,0 +1,33 @@
+[TASKS]
+-- v2
+- switch to shared library [#89064]
+    -- the service, repository, and db stuff is a 1 for 1 with the MVC project.
+    -- just use a class library to save time
+    -- need to decide if I want a package, or sub reop. Likely a package.
+
+-- v3
+- add authenticated web api example [#F2A91]
+
+-- v4 (installer)
+- ensure logs and databse to program data [#B90B8]
+- create installer [#6E787]
+    -- ensure the app is run using an app user 
+
+[ISSUES]
+- // TODO: implement user for this app, and ensure it only has access to the data path [FMS-API/Program.cs::22]
+- // TODO: ensure data path exists [FMS-API/Program.cs::23]
+
+[USERS]
+- royalpizza
+
+[SETTINGS]
+Scanner.Keyword: TODO
+Scanner.Keyword: FIXME
+Scanner.Keyword: BUG
+Scanner.Exclude: *.md
+Scanner.Exclude: *.taskp
+Scanner.Exclude: .git
+Scanner.Exclude: .vs
+Scanner.Exclude: bin
+Scanner.Exclude: obj
+Scanner.Exclude: wwwroot

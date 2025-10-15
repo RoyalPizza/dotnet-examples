@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMS-API", "FMS-API\FMS-API.csproj", "{01F0B15D-5D74-45F7-BF35-235A0F0159C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01F0B15D-5D74-45F7-BF35-235A0F0159C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F0B15D-5D74-45F7-BF35-235A0F0159C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F0B15D-5D74-45F7-BF35-235A0F0159C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F0B15D-5D74-45F7-BF35-235A0F0159C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87253CB6-3B73-4D3C-A065-7D26FBC50C86}
+	EndGlobalSection
+EndGlobal
